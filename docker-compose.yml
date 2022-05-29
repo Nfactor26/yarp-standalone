@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  yarp.reverse.proxy:
+    image: ${DOCKER_REGISTRY-}yarp-reverse-proxy
+    build:
+      context: .
+      dockerfile: Yarp.Reverse.Proxy/Dockerfile
